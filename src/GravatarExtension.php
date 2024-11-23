@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\TwigGravatarExtension;
+namespace Osiom\TwigGravatarExtension;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
