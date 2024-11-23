@@ -1,6 +1,6 @@
 <?php
 
-namespace Osiom\TwigGravatarExtension;
+namespace Osiom\TwigGravatar;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
@@ -15,12 +15,12 @@ class GravatarExtension extends AbstractExtension
     }
 
     /**
-     * Génère l'URL Gravatar pour un email donné.
+     * Generates the Gravatar URL for a given email.
      *
-     * @param string $email Adresse email de l'utilisateur.
-     * @param int $size Taille de l'image Gravatar (en pixels).
-     * @param string $default Type d'image par défaut (identicon, monsterid, etc.).
-     * @return string URL de l'avatar Gravatar.
+     * @param string $email User's email address.
+     * @param int $size Gravatar image size (in pixels).
+     * @param string $default Default image type (identicon, monsterid, etc.).
+     * @return string Gravatar avatar URL.
      */
     public function getGravatarUrl(string $email, int $size = 80, string $default = 'identicon'): string
     {
